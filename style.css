@@ -1,0 +1,886 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+@font-face {
+  font-family: 'nowregular';
+  src: url("font/now-regular-webfont.woff2") format("woff2"), url("font/now-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1762ee;
+  font-family: 'nowregular';
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  margin-top: 6vh;
+  margin-left: 8vw;
+  padding-left: 0.8vw;
+  padding-right: 0.8vw;
+  background: #002ca3;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+  display: inline-block;
+  -webkit-animation: myAnim 1s ease 0s 1 normal forwards;
+          animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+.divlogin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#login {
+  margin-top: 50px;
+  margin-left: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #002ca3;
+  color: white;
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+  display: inline-block;
+  -webkit-animation: myAnim 1s ease 0s 1 normal forwards;
+          animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+h1:hover {
+  -webkit-animation: myAnim 1s ease 0s 1 normal forwards;
+          animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+p {
+  color: white;
+}
+
+main a {
+  color: white;
+  border-left: solid 3px #ffffff;
+  padding-top: 2.8vh;
+  padding-bottom: 2.8vh;
+  padding-right: 1.6vw;
+  padding-left: 1.6vw;
+  margin-bottom: 2.8vh;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  display: inline-block;
+  text-decoration: none;
+}
+
+main a:hover {
+  background: #ffffff;
+  color: #002ca3;
+}
+
+main {
+  margin-left: 9.9vw;
+  margin-right: 0.8vw;
+  min-height: 9.3vh;
+}
+
+.fade {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0%;
+  opacity: 0%;
+  z-index: -100;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  max-width: 15.6vw;
+}
+
+a:hover + .fade {
+  opacity: 50%;
+  right: 5%;
+}
+
+@-webkit-keyframes myAnim {
+  0%,
+  100% {
+    -webkit-transform: translateY(0) rotate(0);
+            transform: translateY(0) rotate(0);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  20% {
+    -webkit-transform: translateY(-20px) rotate(-6deg);
+            transform: translateY(-20px) rotate(-6deg);
+  }
+  40% {
+    -webkit-transform: translateY(5px) rotate(6deg);
+            transform: translateY(5px) rotate(6deg);
+  }
+  100% {
+    -webkit-transform: translateY(-3px) rotate(-1.2deg);
+            transform: translateY(-3px) rotate(-1.2deg);
+  }
+}
+
+@keyframes myAnim {
+  0%,
+  100% {
+    -webkit-transform: translateY(0) rotate(0);
+            transform: translateY(0) rotate(0);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  20% {
+    -webkit-transform: translateY(-20px) rotate(-6deg);
+            transform: translateY(-20px) rotate(-6deg);
+  }
+  40% {
+    -webkit-transform: translateY(5px) rotate(6deg);
+            transform: translateY(5px) rotate(6deg);
+  }
+  100% {
+    -webkit-transform: translateY(-3px) rotate(-1.2deg);
+            transform: translateY(-3px) rotate(-1.2deg);
+  }
+}
+
+@-webkit-keyframes h2 {
+  0% {
+    opacity: 0%;
+  }
+  30% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes h2 {
+  0% {
+    opacity: 0%;
+  }
+  30% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+main > a:nth-child(1) {
+  margin-left: 5px;
+  -webkit-animation: h2 0.8s;
+          animation: h2 0.8s;
+}
+
+main > a:nth-child(2) {
+  margin-left: 35px;
+  -webkit-animation: h2 1s;
+          animation: h2 1s;
+}
+
+main > a:nth-child(3) {
+  margin-left: 65px;
+  -webkit-animation: h2 1.2s;
+          animation: h2 1.2s;
+}
+
+main > a:nth-child(4) {
+  margin-left: 95px;
+  -webkit-animation: h2 1.4s;
+          animation: h2 1.4s;
+}
+
+main > a:nth-child(5) {
+  margin-left: 125px;
+  -webkit-animation: h2 1.6s;
+          animation: h2 1.6s;
+}
+
+main > a:nth-child(6) {
+  margin-left: 155px;
+  -webkit-animation: h2 1.8s;
+          animation: h2 1.8s;
+}
+
+main > a:nth-child(7) {
+  margin-left: 185px;
+  -webkit-animation: h2 2s;
+          animation: h2 2s;
+}
+
+main > a:nth-child(8) {
+  margin-left: 215px;
+  -webkit-animation: h2 2.2s;
+          animation: h2 2.2s;
+}
+
+main > a:nth-child(9) {
+  margin-left: 245px;
+  -webkit-animation: h2 2.4s;
+          animation: h2 2.4s;
+}
+
+main > a:nth-child(10) {
+  margin-left: 275px;
+  -webkit-animation: h2 2.6s;
+          animation: h2 2.6s;
+}
+
+main > a:nth-child(11) {
+  margin-left: 305px;
+  -webkit-animation: h2 2.8s;
+          animation: h2 2.8s;
+}
+
+main > a:nth-child(12) {
+  margin-left: 335px;
+  -webkit-animation: h2 3s;
+          animation: h2 3s;
+}
+
+main > a:nth-child(13) {
+  margin-left: 365px;
+  -webkit-animation: h2 3.2s;
+          animation: h2 3.2s;
+}
+
+main > a:nth-child(14) {
+  margin-left: 395px;
+  -webkit-animation: h2 3.4s;
+          animation: h2 3.4s;
+}
+
+main > a:nth-child(15) {
+  margin-left: 425px;
+  -webkit-animation: h2 3.6s;
+          animation: h2 3.6s;
+}
+
+main > a:nth-child(16) {
+  margin-left: 455px;
+  -webkit-animation: h2 3.8s;
+          animation: h2 3.8s;
+}
+
+main > a:nth-child(17) {
+  margin-left: 485px;
+  -webkit-animation: h2 4s;
+          animation: h2 4s;
+}
+
+main > a:nth-child(18) {
+  margin-left: 515px;
+  -webkit-animation: h2 4.2s;
+          animation: h2 4.2s;
+}
+
+main > a:nth-child(19) {
+  margin-left: 545px;
+  -webkit-animation: h2 4.4s;
+          animation: h2 4.4s;
+}
+
+main > a:nth-child(20) {
+  margin-left: 575px;
+  -webkit-animation: h2 4.6s;
+          animation: h2 4.6s;
+}
+
+main > a:nth-child(21) {
+  margin-left: 605px;
+  -webkit-animation: h2 4.8s;
+          animation: h2 4.8s;
+}
+
+main > a:nth-child(22) {
+  margin-left: 635px;
+  -webkit-animation: h2 5s;
+          animation: h2 5s;
+}
+
+main > a:nth-child(23) {
+  margin-left: 665px;
+  -webkit-animation: h2 5.2s;
+          animation: h2 5.2s;
+}
+
+main > a:nth-child(24) {
+  margin-left: 695px;
+  -webkit-animation: h2 5.4s;
+          animation: h2 5.4s;
+}
+
+main > a:nth-child(25) {
+  margin-left: 725px;
+  -webkit-animation: h2 5.6s;
+          animation: h2 5.6s;
+}
+
+main > a:nth-child(26) {
+  margin-left: 755px;
+  -webkit-animation: h2 5.8s;
+          animation: h2 5.8s;
+}
+
+main > a:nth-child(27) {
+  margin-left: 785px;
+  -webkit-animation: h2 6s;
+          animation: h2 6s;
+}
+
+main > a:nth-child(28) {
+  margin-left: 815px;
+  -webkit-animation: h2 6.2s;
+          animation: h2 6.2s;
+}
+
+main > a:nth-child(29) {
+  margin-left: 845px;
+  -webkit-animation: h2 6.4s;
+          animation: h2 6.4s;
+}
+
+main > a:nth-child(30) {
+  margin-left: 875px;
+  -webkit-animation: h2 6.6s;
+          animation: h2 6.6s;
+}
+
+main > a:nth-child(31) {
+  margin-left: 905px;
+  -webkit-animation: h2 6.8s;
+          animation: h2 6.8s;
+}
+
+main > a:nth-child(32) {
+  margin-left: 935px;
+  -webkit-animation: h2 7s;
+          animation: h2 7s;
+}
+
+main > a:nth-child(33) {
+  margin-left: 965px;
+  -webkit-animation: h2 7.2s;
+          animation: h2 7.2s;
+}
+
+main > a:nth-child(34) {
+  margin-left: 995px;
+  -webkit-animation: h2 7.4s;
+          animation: h2 7.4s;
+}
+
+main > a:nth-child(35) {
+  margin-left: 1025px;
+  -webkit-animation: h2 7.6s;
+          animation: h2 7.6s;
+}
+
+main > a:nth-child(36) {
+  margin-left: 1055px;
+  -webkit-animation: h2 7.8s;
+          animation: h2 7.8s;
+}
+
+main > a:nth-child(37) {
+  margin-left: 1085px;
+  -webkit-animation: h2 8s;
+          animation: h2 8s;
+}
+
+main > a:nth-child(38) {
+  margin-left: 1115px;
+  -webkit-animation: h2 8.2s;
+          animation: h2 8.2s;
+}
+
+main > a:nth-child(39) {
+  margin-left: 1145px;
+  -webkit-animation: h2 8.4s;
+          animation: h2 8.4s;
+}
+
+main > a:nth-child(40) {
+  margin-left: 1175px;
+  -webkit-animation: h2 8.6s;
+          animation: h2 8.6s;
+}
+
+main > a:nth-child(41) {
+  margin-left: 1205px;
+  -webkit-animation: h2 8.8s;
+          animation: h2 8.8s;
+}
+
+main > a:nth-child(42) {
+  margin-left: 1235px;
+  -webkit-animation: h2 9s;
+          animation: h2 9s;
+}
+
+main > a:nth-child(43) {
+  margin-left: 1265px;
+  -webkit-animation: h2 9.2s;
+          animation: h2 9.2s;
+}
+
+main > a:nth-child(44) {
+  margin-left: 1295px;
+  -webkit-animation: h2 9.4s;
+          animation: h2 9.4s;
+}
+
+main > a:nth-child(45) {
+  margin-left: 1325px;
+  -webkit-animation: h2 9.6s;
+          animation: h2 9.6s;
+}
+
+main > a:nth-child(46) {
+  margin-left: 1355px;
+  -webkit-animation: h2 9.8s;
+          animation: h2 9.8s;
+}
+
+main > a:nth-child(47) {
+  margin-left: 1385px;
+  -webkit-animation: h2 10s;
+          animation: h2 10s;
+}
+
+main > a:nth-child(48) {
+  margin-left: 1415px;
+  -webkit-animation: h2 10.2s;
+          animation: h2 10.2s;
+}
+
+main > a:nth-child(49) {
+  margin-left: 1445px;
+  -webkit-animation: h2 10.4s;
+          animation: h2 10.4s;
+}
+
+main > a:nth-child(50) {
+  margin-left: 1475px;
+  -webkit-animation: h2 10.6s;
+          animation: h2 10.6s;
+}
+
+main > a:nth-child(51) {
+  margin-left: 1505px;
+  -webkit-animation: h2 10.8s;
+          animation: h2 10.8s;
+}
+
+main > a:nth-child(52) {
+  margin-left: 1535px;
+  -webkit-animation: h2 11s;
+          animation: h2 11s;
+}
+
+main > a:nth-child(53) {
+  margin-left: 1565px;
+  -webkit-animation: h2 11.2s;
+          animation: h2 11.2s;
+}
+
+main > a:nth-child(54) {
+  margin-left: 1595px;
+  -webkit-animation: h2 11.4s;
+          animation: h2 11.4s;
+}
+
+main > a:nth-child(55) {
+  margin-left: 1625px;
+  -webkit-animation: h2 11.6s;
+          animation: h2 11.6s;
+}
+
+main > a:nth-child(56) {
+  margin-left: 1655px;
+  -webkit-animation: h2 11.8s;
+          animation: h2 11.8s;
+}
+
+main > a:nth-child(57) {
+  margin-left: 1685px;
+  -webkit-animation: h2 12s;
+          animation: h2 12s;
+}
+
+main > a:nth-child(58) {
+  margin-left: 1715px;
+  -webkit-animation: h2 12.2s;
+          animation: h2 12.2s;
+}
+
+main > a:nth-child(59) {
+  margin-left: 1745px;
+  -webkit-animation: h2 12.4s;
+          animation: h2 12.4s;
+}
+
+main > a:nth-child(60) {
+  margin-left: 1775px;
+  -webkit-animation: h2 12.6s;
+          animation: h2 12.6s;
+}
+
+main > a:nth-child(61) {
+  margin-left: 1805px;
+  -webkit-animation: h2 12.8s;
+          animation: h2 12.8s;
+}
+
+main > a:nth-child(62) {
+  margin-left: 1835px;
+  -webkit-animation: h2 13s;
+          animation: h2 13s;
+}
+
+main > a:nth-child(63) {
+  margin-left: 1865px;
+  -webkit-animation: h2 13.2s;
+          animation: h2 13.2s;
+}
+
+main > a:nth-child(64) {
+  margin-left: 1895px;
+  -webkit-animation: h2 13.4s;
+          animation: h2 13.4s;
+}
+
+main > a:nth-child(65) {
+  margin-left: 1925px;
+  -webkit-animation: h2 13.6s;
+          animation: h2 13.6s;
+}
+
+main > a:nth-child(66) {
+  margin-left: 1955px;
+  -webkit-animation: h2 13.8s;
+          animation: h2 13.8s;
+}
+
+main > a:nth-child(67) {
+  margin-left: 1985px;
+  -webkit-animation: h2 14s;
+          animation: h2 14s;
+}
+
+main > a:nth-child(68) {
+  margin-left: 2015px;
+  -webkit-animation: h2 14.2s;
+          animation: h2 14.2s;
+}
+
+main > a:nth-child(69) {
+  margin-left: 2045px;
+  -webkit-animation: h2 14.4s;
+          animation: h2 14.4s;
+}
+
+main > a:nth-child(70) {
+  margin-left: 2075px;
+  -webkit-animation: h2 14.6s;
+          animation: h2 14.6s;
+}
+
+main > a:nth-child(71) {
+  margin-left: 2105px;
+  -webkit-animation: h2 14.8s;
+          animation: h2 14.8s;
+}
+
+main > a:nth-child(72) {
+  margin-left: 2135px;
+  -webkit-animation: h2 15s;
+          animation: h2 15s;
+}
+
+main > a:nth-child(73) {
+  margin-left: 2165px;
+  -webkit-animation: h2 15.2s;
+          animation: h2 15.2s;
+}
+
+main > a:nth-child(74) {
+  margin-left: 2195px;
+  -webkit-animation: h2 15.4s;
+          animation: h2 15.4s;
+}
+
+main > a:nth-child(75) {
+  margin-left: 2225px;
+  -webkit-animation: h2 15.6s;
+          animation: h2 15.6s;
+}
+
+main > a:nth-child(76) {
+  margin-left: 2255px;
+  -webkit-animation: h2 15.8s;
+          animation: h2 15.8s;
+}
+
+main > a:nth-child(77) {
+  margin-left: 2285px;
+  -webkit-animation: h2 16s;
+          animation: h2 16s;
+}
+
+main > a:nth-child(78) {
+  margin-left: 2315px;
+  -webkit-animation: h2 16.2s;
+          animation: h2 16.2s;
+}
+
+main > a:nth-child(79) {
+  margin-left: 2345px;
+  -webkit-animation: h2 16.4s;
+          animation: h2 16.4s;
+}
+
+main > a:nth-child(80) {
+  margin-left: 2375px;
+  -webkit-animation: h2 16.6s;
+          animation: h2 16.6s;
+}
+
+main > a:nth-child(81) {
+  margin-left: 2405px;
+  -webkit-animation: h2 16.8s;
+          animation: h2 16.8s;
+}
+
+main > a:nth-child(82) {
+  margin-left: 2435px;
+  -webkit-animation: h2 17s;
+          animation: h2 17s;
+}
+
+main > a:nth-child(83) {
+  margin-left: 2465px;
+  -webkit-animation: h2 17.2s;
+          animation: h2 17.2s;
+}
+
+main > a:nth-child(84) {
+  margin-left: 2495px;
+  -webkit-animation: h2 17.4s;
+          animation: h2 17.4s;
+}
+
+main > a:nth-child(85) {
+  margin-left: 2525px;
+  -webkit-animation: h2 17.6s;
+          animation: h2 17.6s;
+}
+
+main > a:nth-child(86) {
+  margin-left: 2555px;
+  -webkit-animation: h2 17.8s;
+          animation: h2 17.8s;
+}
+
+main > a:nth-child(87) {
+  margin-left: 2585px;
+  -webkit-animation: h2 18s;
+          animation: h2 18s;
+}
+
+main > a:nth-child(88) {
+  margin-left: 2615px;
+  -webkit-animation: h2 18.2s;
+          animation: h2 18.2s;
+}
+
+main > a:nth-child(89) {
+  margin-left: 2645px;
+  -webkit-animation: h2 18.4s;
+          animation: h2 18.4s;
+}
+
+main > a:nth-child(90) {
+  margin-left: 2675px;
+  -webkit-animation: h2 18.6s;
+          animation: h2 18.6s;
+}
+
+main > a:nth-child(91) {
+  margin-left: 2705px;
+  -webkit-animation: h2 18.8s;
+          animation: h2 18.8s;
+}
+
+main > a:nth-child(92) {
+  margin-left: 2735px;
+  -webkit-animation: h2 19s;
+          animation: h2 19s;
+}
+
+main > a:nth-child(93) {
+  margin-left: 2765px;
+  -webkit-animation: h2 19.2s;
+          animation: h2 19.2s;
+}
+
+main > a:nth-child(94) {
+  margin-left: 2795px;
+  -webkit-animation: h2 19.4s;
+          animation: h2 19.4s;
+}
+
+main > a:nth-child(95) {
+  margin-left: 2825px;
+  -webkit-animation: h2 19.6s;
+          animation: h2 19.6s;
+}
+
+main > a:nth-child(96) {
+  margin-left: 2855px;
+  -webkit-animation: h2 19.8s;
+          animation: h2 19.8s;
+}
+
+main > a:nth-child(97) {
+  margin-left: 2885px;
+  -webkit-animation: h2 20s;
+          animation: h2 20s;
+}
+
+main > a:nth-child(98) {
+  margin-left: 2915px;
+  -webkit-animation: h2 20.2s;
+          animation: h2 20.2s;
+}
+
+main > a:nth-child(99) {
+  margin-left: 2945px;
+  -webkit-animation: h2 20.4s;
+          animation: h2 20.4s;
+}
+
+main > a:nth-child(100) {
+  margin-left: 2975px;
+  -webkit-animation: h2 20.6s;
+          animation: h2 20.6s;
+}
+
+.actu {
+  margin-left: 7.8vw;
+  margin-right: 9.9vw;
+  margin-top: 2.8vh;
+}
+
+.icon {
+  color: white;
+  margin-top: 4.6vh;
+  margin-bottom: 4.6vh;
+  margin-left: 2.6vw;
+  margin-right: 2.6vw;
+  padding: 5px;
+  height: 50px;
+  width: auto;
+  font-size: 50px;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  -webkit-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.icon:hover {
+  color: #002ca3;
+}
+
+.form {
+  margin-top: 2.8vh;
+  margin-left: 7.8vw;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  color: white;
+  font-size: 20px;
+}
+
+.form label {
+  margin-top: 1.4vh;
+}
+
+.txt {
+  height: 2.3vh;
+}
+
+.form textarea {
+  width: 600px;
+  height: 18.5vh;
+}
+
+.myButton {
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+          box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ffffff), to(#f6f6f6));
+  background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #002ca3;
+  font-family: 'nowregular';
+  font-size: 15px;
+  font-weight: bold;
+  padding: 12px 28px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+
+.myButton:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #f6f6f6), to(#ffffff));
+  background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+  background-color: #f6f6f6;
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+@media all and (max-width: 680px) and (min-width: 580px) {
+  .form textarea {
+    width: 500px;
+    height: 18.5vh;
+  }
+}
+
+@media all and (max-width: 580px) and (min-width: 480px) {
+  .form textarea {
+    width: 400px;
+    height: 18.5vh;
+  }
+}
+
+@media all and (max-width: 480px) and (min-width: 380px) {
+  .form textarea {
+    width: 300px;
+    height: 18.5vh;
+  }
+}
+
+@media all and (max-width: 380px) {
+  .form textarea {
+    width: 300px;
+    height: 18.5vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */

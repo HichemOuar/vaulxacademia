@@ -1,0 +1,143 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+
+
+@font-face {
+  font-family: 'nowregular';
+  src: url('font/now-regular-webfont.woff2') format('woff2'),
+       url('font/now-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+p {
+
+
+  font-family: 'nowregular';
+}
+
+
+h1,h2 {
+
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+nav{
+  z-index: 1000;
+  font-family: 'nowregular';
+}
+ nav  a {
+  text-decoration: none;
+  margin-left: 30px;
+  padding-left: 5px;
+  }
+  nav  a:hover {
+    margin-left: 30px;
+    padding-left: 10px;
+    
+    
+  border-left:4px solid rgb(255, 255, 255);
+transition:0.1s; }
+
+
+
+
+
+ #sidebar {
+  position:fixed;
+  height:100vh;
+  min-width: 250px;
+  max-width: 250px;
+  background: #002ca3;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  
+   }
+ 
+     #sidebar.active {
+      margin-left: -250px; }
+      #sidebar.active .custom-menu {
+        margin-right: -50px; }
+ 
+   
+  #sidebar ul.components {
+    padding: 0; }
+  #sidebar ul li {
+    font-size: 16px; }
+    #sidebar ul li > ul {
+      margin-left: 10px; }
+      #sidebar ul li > ul li {
+        font-size: 14px; }
+    #sidebar ul li a {
+      margin: 30px 0px 30px 20px;
+      
+      display: block;
+      color: rgb(255, 255, 255);
+      font-weight: bolder;
+       }
+      
+    #sidebar ul li.active > a {
+      background: transparent;
+      color: #fff; }
+      @media (max-width: 991.98px) {
+        #sidebar {
+          margin-left: -250px; }
+          #sidebar.active {
+            margin-left: 0; }
+          #sidebar .custom-menu {
+            margin-right: -50px !important;
+            top: 10px !important; } }
+      #sidebar .custom-menu {
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        right: -10px;
+        margin-right: -20px;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+        @media (prefers-reduced-motion: reduce) {
+          #sidebar .custom-menu {
+            -webkit-transition: none;
+            -o-transition: none;
+            transition: none; } }
+        #sidebar .custom-menu .btn {
+          width: 40px;
+          height: 40px;
+          color:rgb(0, 0, 0); /* ici pour définir la couleur des trois traits à l'intérieur du bouton*/
+          
+           }
+          #sidebar .custom-menu .btn.btn-primary {
+            background: #ffffff;      /* ici pour definir la couleur du background du bouton par défaut (avant le clic) */
+            border-color: #ffffff; 
+            border: 0px ;
+            border-radius: 5px;
+        }
+         
+.lequipe {
+
+  height:90vh;
+  width:auto;
+  position:absolute;
+  left:50%;
+  
+  transform:translate(-50%);
+}
+
+
+.couleurpagequipe {
+
+  background-color:#004AAD;
+}
+
+body {
+
+  background-color:#004AAD;
+}
